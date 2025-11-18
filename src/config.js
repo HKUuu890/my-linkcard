@@ -51,9 +51,10 @@ export default {
       color: "#EA4335"
     },
     {
-      name: "Kopi Chat(Featured/宣伝中！)",
+      name: "Kopi Chat",
       url: "https://kopi-chat.com/",
       icon: "./assets/KopiChat.png",
+      description:"Featured/宣伝中!",
       color: "#FFD54F"
     }
 
