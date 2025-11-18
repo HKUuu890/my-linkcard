@@ -46,7 +46,7 @@ yarn-error.log*
 
 # Personal/sensitive files
 src/assets/avatar-original.*
-src/assets/og-image-original.*
+src/assets/og-imagev2-original.*
 *.backup
 config.personal.js
 config.local.js
