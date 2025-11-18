@@ -44,18 +44,19 @@ export default {
       icon: "mdi:note-text-outline",
       color: "#41C9B4"
     },
-    {
-      name: "Kopi Chat",
-      url: "https://kopi-chat.com/",
-      icon: "./assets/KopiChat.png",
-      color: "#FFD54F"
-    },
-    {
+        {
       name: "Email",
       url: "mailto:ryuta.motomura@cavi.world",
       icon: "mdi:email",
       color: "#EA4335"
+    },
+    {
+      name: "Kopi Chat(Featured/宣伝中！)",
+      url: "https://kopi-chat.com/",
+      icon: "./assets/KopiChat.png",
+      color: "#FFD54F"
     }
+
   ],
   
   about: {
