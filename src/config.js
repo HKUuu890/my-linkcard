@@ -66,7 +66,7 @@ export default {
       "##教育と課外活動",
       "中学受験をして長崎県の私立中高一貫校に進学したが途中で自主退学してN高等学校に転学し卒業した。中高一貫校においてプログラミング同好会を立ち上げ、N高等学校では哲学研究会を設立・運営した。大学はマレーシアのアジア太平洋大学に進学し、コンピュータサイエンス（AI専攻）を学びながら農業クラブを創設し、部長を務めた。",
       "##現在の目標",
-      "中毒の社会を終わらせて夢中の社会を創るために、Caravan Village Inc.を設立し、代表取締役CEOを務める。国際的なプログラマやデザイナー、マーケターとのネットワークを構築しながら、受注開発や自社サービス開発に取り組んでいる。",
+      "「中毒」の社会を終わらせて「夢中」の社会を創るために、Caravan Village Inc.を設立し、代表取締役CEOを務める。国際的なプログラマやデザイナー、マーケターとのネットワークを構築しながら、受注開発や自社サービス開発に取り組んでいる。",
       "━━━", // separator line
       "##Background",
       "Born in Nagasaki in 2004, I moved to Washington D.C. at just two months old. Since then, I have been raised in diverse environments across the Asia-Pacific region, including Tokyo, Bangkok, Nagasaki, Osaka,Seattle, Ulaanbaatar, and Kuala Lumpur.",
