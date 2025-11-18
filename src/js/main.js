@@ -57,9 +57,20 @@ class LinkPageApp {
       // Apply brand color to icon if specified
       const iconStyle = link.color ? `style="color: ${link.color};"` : '';
 
+      // Determine icon markup: image (local) or iconify symbol
+      let iconMarkup = '';
+      const isImage = link.icon && /\.(png|jpe?g|svg|gif)$/i.test(link.icon);
+      if (isImage) {
+        // Use an <img> for local image icons
+        iconMarkup = `<img src="${link.icon}" alt="${link.name} icon" style="width:100%;height:100%;object-fit:contain;border-radius:6px;">`;
+      } else {
+        // Fallback to Iconify icon
+        iconMarkup = `<span class="iconify" data-icon="${link.icon}"></span>`;
+      }
+
       linkEl.innerHTML = `
         <div class="icon" ${iconStyle}>
-          <span class="iconify" data-icon="${link.icon}"></span>
+          ${iconMarkup}
         </div>
         <div class="content">
           <div class="title">${link.name}</div>
@@ -90,6 +101,10 @@ class LinkPageApp {
       // Convert separator to HR element
       if (p === "━━━") {
         return `<hr>`;
+      }
+      // ##で始まる行は太字タイトルに
+      if (/^##/.test(p)) {
+        return `<p><strong>${p.replace(/^##+/, '').trim()}</strong></p>`;
       }
       return `<p>${p}</p>`;
     }).join('');

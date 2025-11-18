@@ -37,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/rayramy04/linkcard/issues"
   },
-  "homepage": "https://rayramy04.github.io/linkcard/"
+  "homepage": "https://rayramy04.github.io/linkcard/",
+  "dependencies": {
+    "@iconify/react": "^6.0.2"
+  }
 }

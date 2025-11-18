@@ -39,7 +39,7 @@
 body {
   min-height: 100vh;
   padding: 2rem 1rem;
-  background: var(--gradient-bg), #ffffff;
+  background: #000000;
   position: relative;
 }
 
@@ -54,22 +54,28 @@ body::after {
 }
 
 body::before {
-  opacity: 0.25;
-  background: 
-    linear-gradient(60deg, transparent 33%, rgba(255,255,255,0.15) 33% 66%, transparent 66%),
-    linear-gradient(-60deg, transparent 33%, rgba(255,255,255,0.1) 33% 66%, transparent 66%),
-    linear-gradient(0deg, transparent 33%, rgba(0,0,0,0.04) 33% 66%, transparent 66%);
-  background-size: 60px 104px;
+  opacity: 1;
+  background-image: 
+    radial-gradient(circle, rgba(255,255,255,0.25) 1.5px, transparent 1.5px),
+    radial-gradient(circle, rgba(255,255,255,0.18) 2px, transparent 2px),
+    radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
+  background-size: 40px 40px, 70px 70px, 20px 20px;
+  background-position: 0 0, 20px 20px, 5px 5px;
 }
 
 body::after {
-  opacity: 0.18;
-  background: 
-    linear-gradient(30deg, transparent 49.5%, rgba(255,255,255,0.1) 49.5% 50.5%, transparent 50.5%),
-    linear-gradient(150deg, transparent 49.5%, rgba(255,255,255,0.1) 49.5% 50.5%, transparent 50.5%),
-    linear-gradient(270deg, transparent 49.5%, rgba(255,255,255,0.07) 49.5% 50.5%, transparent 50.5%);
-  background-size: 80px 140px;
-  background-position: 0 0, 0 0, 40px 70px;
+  content: 'CAVI';
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: clamp(12rem, 70vw, 22rem);
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+  white-space: nowrap;
+  z-index: 1;
+  pointer-events: none;
+  letter-spacing: 0.08em;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
 
@@ -77,7 +83,7 @@ main {
   max-width: 600px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 main > * { border: none !important; margin: 0 !important; }
