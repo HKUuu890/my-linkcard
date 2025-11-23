@@ -126,6 +126,13 @@ main>* {
     top: 2rem;
     right: 2rem;
   }
+
+  body::after {
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 40%;
+    font-size: clamp(12rem, 70vw, 22rem);
+  }
 }
 
 /* Profile card with gradient border */
