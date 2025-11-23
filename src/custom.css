@@ -67,7 +67,7 @@ body::after {
   content: 'CAVI';
   position: fixed;
   top: 10%;
-  left: 40%;
+  left: 20%;
   transform: translate(-50%, -50%) rotate(90deg);
   font-size: clamp(6rem, 35vh, 25rem);
   font-weight: 900;
